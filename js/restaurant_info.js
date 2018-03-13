@@ -58,13 +58,18 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.setAttribute("alt","People reviews in resturant!");
-  image.setAttribute("alt","people eatting in resturant");
-  image.setAttribute("alt","Stuff working on resturant");
-  image.setAttribute("alt","Customers on resturant!!");
+  image.setAttribute("alt","People eating in a restaurant!");
+  image.setAttribute("alt","The restaurant offers the finest types of pizza");
+  image.setAttribute("alt","Restaurant lounge");
+  image.setAttribute("alt","restaurant Katz`s");
+  image.setAttribute("alt","stuff on resturant!!");
+  image.setAttribute("alt","People are waiting to eat in the restaurant");
+  image.setAttribute("alt","Superiority burger Restaurant");
+  image.setAttribute("alt","The Dutch Resturant");
+  image.setAttribute("alt","People who eat meals as well as social communication");
+  image.setAttribute("alt","Luxurious hall inside a restaurant");
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
-
   // fill operating hours
   if (restaurant.operating_hours) {
     fillRestaurantHoursHTML();
